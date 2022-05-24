@@ -48,17 +48,17 @@ body {
             background-color: #ccccccaf;
         }
 
-        .correct {
+        &.correct {
             color: #ffffff;
             background-color: green;
         }
 
-        .wrong {
+        &.wrong {
             color: #ffffff;
             background-color: red;
         }
 
-        .disabled {
+        &.disabled {
             pointer-events: none;
         }
     }
@@ -92,11 +92,11 @@ body {
         border-radius: 50%;
         margin-right: 10px;
 
-        .correct {
+        &.correct {
             background-color: green;
         }
 
-        .wrong {
+        &.wrong {
             background-color: red;
         }
     }
@@ -114,11 +114,11 @@ body {
     align-items: center;
     justify-content: center;
 
-    .active {
+    &.active {
         display: flex;
     }
 
-    .content {
+    &.content {
         background-color: darkcyan;
         padding: 30px;
         border-radius: 10px;
@@ -127,12 +127,12 @@ body {
         color: #ffffff;
         text-align: center;
 
-        h1 {
+        &h1 {
             font-size: 36px;
             margin: 0 0 20px;
         }
 
-        button {
+        &button {
             padding: 15px 50px;
             border: none;
             background-color: #ff9800;
@@ -146,5 +146,30 @@ body {
                 background-color: #ff9900b4;
             }
         }
+    }
+}
+
+.content {
+    background-color: darkcyan;
+    padding: 30px;
+    border-radius: 10px;
+    flex-basis: 700px;
+    max-width: 700px;
+    color: #ffffff;
+    text-align: center;
+}
+
+button {
+    padding: 15px 50px;
+    border: none;
+    background-color: #ff9800;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+
+    &:hover {
+        background-color: #ff9900b4;
     }
 }
