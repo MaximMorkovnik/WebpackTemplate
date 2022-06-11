@@ -1,4 +1,4 @@
-# static-site-webpack-template
+# static-site-webpack-template 2022
 
 1. установить зависимости -> `npm i`
 
